@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" id="myhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+        	body{
+        		width: 10rem;
+        		background: #F4F4F4;
+        	}
+        	*{
+        		padding: 0;
+        		margin: 0;
+        	}
+            img{vertical-align:middle;}
+        	#app{
+        		min-height: 100%;
+        	}
+        	#app>div{
+        		width: 9.47rem;
+				background-color: #ffffff;
+				box-shadow: 0rem 0rem 0.2rem 0rem 
+					rgba(120, 120, 120, 0.35);
+				border-radius: 0.21rem;
+				margin: .2rem auto 0;
+				box-sizing: border-box;
+				position: relative;
+        	}
+        	.tops{
+				height: 4.15rem;
+				padding: .35rem .2rem 0;
+        	}
+        	.top>img{
+        		width: 2.2rem;
+        		margin-left: .21rem;
+        		vertical-align: top;
+        	}
+        	.tops .right{
+        		display: inline-block;
+        		width: 6.2rem;
+        		position: relative;
+        	}
+        	.tops .right p:first-child{
+        		line-height: .7rem;
+        		font-size: 0.53rem;
+        		line-height: .53rem;
+				color: #4d4bcb;
+				margin-top: .15rem;
+        	}
+        	.tops .right img{
+        		position: absolute;
+        		right: 0;
+        		top: 0;
+        		width: 0.67rem;
+        	}
+        	.tops .right p:nth-child(2){
+        		font-size: 0.37rem;
+        		margin: .3rem 0 .33rem;
+        		line-height: .37rem;
+        	}
+        	.tops .right p span{
+        		color: #a8a8a8;
+        	}
+        	.tops .right p:nth-child(2) span{
+        		font-size: 0.29rem;
+        	}
+        	.tops .right p:nth-child(3){
+        		line-height: .37rem;
+        		font-size: 0.37rem;
+        	}
+        	.tops .bottom{
+        		height: 1.25rem;
+        		border-top: 1px solid  #eeeeee;
+        		line-height: 1.25rem;
+        		position: absolute;
+        		bottom: 0;
+        		left: .2rem;
+        		width: calc(100% - .4rem);
+        	}
+        	.tops .bottom div{
+        		display: inline-block;
+        		width: 48%;
+        		font-size: 0.37rem;
+        		overflow: hidden;
+        	}
+        	.tops .bottom img{
+        		width: 0.47rem;
+        		margin-right: .28rem;
+        	}
+        	.cont{
+        		height: 2.4rem;
+        		padding: .2rem .2rem .2rem .13rem
+        	}
+        	.cont div img:nth-child(1){
+				width: 1.52rem;
+        	}
+        	.cont div img:nth-child(2){
+				width: 1.01rem;
+        	}
+        	.cont div:nth-child(1){
+        		height: 2rem;
+        		display: inline-block;
+        		border-right: 1px solid #eeeeee;
+        		vertical-align: top;
+        		line-height: 2rem;
+        		padding-right: .24rem;
+        		padding-top: .32rem;
+        		box-sizing: border-box;
+        	}
+        	.cont div:nth-child(1) img{
+        		float: left;
+        	}
+        	.cont div:nth-child(2){
+				display: inline-block;
+				padding:.24rem 0 0;
+				width: 5.7rem;
+        	}
+        	.cont div:nth-child(2)>img{
+				width: 0.2rem;
+				position: absolute;
+				right: .2rem;
+				top: 1.03rem;
+        	}
+			.cont div:nth-child(2) p:first-child{
+				font-size: 0.4rem;
+				line-height: .4rem;
+			}
+			.cont div:nth-child(2) p span{
+				float: right;
+			}
+			.cont div:nth-child(2) p:nth-child(2) img{
+				width: 0.24rem;
+			}
+			.cont div:nth-child(2) p img{
+				position: relative;
+				top: -.05rem;
+				margin-right:.13rem ;
+			}
+			.cont div:nth-child(2) p:nth-child(3) img{
+				width: 0.27rem;
+			}
+			.cont div:nth-child(2) p:nth-child(2){
+				font-size:  0.32rem;
+				line-height: .32rem;
+				color: #a8a8a8;
+				margin: .3rem 0 .28rem;
+			}
+			.cont div:nth-child(2) p:nth-child(3){
+				font-size:  0.32rem;
+				line-height: .32rem;
+			}
+			.box{
+				height: 1.75rem;
+				padding: .32rem 0 0 .27rem;
+			}
+			.box p:nth-child(1){
+				font-size: 0.4rem;
+				line-height: 1;
+			}
+			.box p:nth-child(2){
+				font-size: 0.37rem;
+				color: #a8a8a8;
+				margin-top: .37rem;
+				line-height: 1;
+			}
+			.box p:nth-child(2) span{
+				margin-left:.4rem;
+			}
+			.box img{
+				position: absolute;
+				right: .23rem;
+				bottom: .31rem;
+				width: 0.19rem;
+			}
+			.box1{
+				height: 2.12rem;
+				padding: .32rem .13rem 0;
+				font-size: 0.4rem;
+			}
+			.box1 p{
+				padding-left: .15rem;
+				line-height: .47rem;
+			}
+			.box1 p img{
+				float: right;
+				margin-right:.21rem ;
+				width: 0.35rem;
+			}
+			.box1 p span{
+				float: right;
+				margin-right:.81rem ;
+				color: #c00000;
+			}
+			.box1 input{
+				width:100%;
+				height: 0.93rem;
+			    background-color: #f7f7f7;
+				border-radius: 0.13rem;
+				margin-top: .24rem;
+				border: 0;
+				outline: 0;
+				padding-left: .21rem;
+				font-size: 0.37rem;
+				box-sizing: border-box;
+			}
+			#app>p{
+				color: #c00000;
+				font-size: 0.32rem;
+				margin: .33rem 0 0 .41rem;
+			}
+			.bar{
+				height: 1.2rem;
+				position: fixed;
+				bottom:0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+			.bar div:nth-child(1){
+				width: 7.93rem;
+				background-color: #c00000;
+				line-height: 1.2rem;
+				color: #ffffff;
+				font-size: 0.4rem;
+			}
+			.bar div{
+				display: inline-block;
+				float: left;
+			}
+			.bar div:nth-child(2){
+				width: calc(100% - 7.93rem);
+				font-size: 0.32rem;
+				color: #ff7611;
+				background-color: #ffffff;
+				height: 1.2rem;
+			}
+			.bar div:nth-child(2) img{
+				width: 0.41rem;
+				margin-top: .21rem;
+			}
+        </style>
+    </head>
+    <body>
+		<div id="app">
+			<div class="tops">
+				<div class="top">
+					<img src="images/logo.png" alt="">
+					<div class="right">
+						<p>浙A·12345</p>
+						<p>宝骏560<span> 2018款 1.5L 自动</span></p>
+						<p><span>购车天数</span>181天<span> | 行驶里程</span>12500KM</p>
+						<img src="images/cx.png" alt="">
+					</div>	
+					<div class="bottom">
+						<div><img src="images/peo.png" alt="">刘德华</div>
+						<div><img src="images/tel.png" alt="">18112345678</div>
+					</div>
+				</div>
+			</div>
+			<div class="cont">
+				<div>
+					<img src="images/wl.png" alt="">
+					<img src="images/logo2.png" alt="">
+				</div>
+				<div>
+					<p>绍兴五菱汽车贸易有限公司</p>
+					<p><span>1.5KM</span><img src="images/adr.png" alt="">绍兴市越城区人民北路683号</p>
+					<p><span>已有1201人预约</span><img src="images/tel2.png" alt="">0575-3888888</p>
+					<img src="images/goyo.png" alt="">
+				</div>
+			</div>
+			<div class="box">
+				<p>预约进店时间</p>
+				<p>2018年8月15日（星期三）<span>上午9:00</span></p>
+				<img src="images/goyo.png" alt="">
+			</div>
+			<div class="box">
+				<p>预约维保类别</p>
+				<p>保养/维修</p>
+			</div>
+			<div class="box1">
+				<p><span>按住说话</span><img src="images/ht.png" alt="">其他维保需求描述</p>
+				<input type="text" placeholder="备注其他维保需求">
+			</div>
+			<p>本次预约保养的费用请以经销商实际收费为准。</p>
+			<section class="bar">
+				<div>提交预约</div>
+				<div>
+					<p>	<img src="images/tel3.png" alt=""></p>
+					致电厂家
+				</div>
+			</section>
+		</div>
+
+    	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    	<script>
+    		$('#myhtml').css("font-size",window.screen.width/10 + "px");
+    	</script>
+    </body>
+</html>
